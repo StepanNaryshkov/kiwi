@@ -26,6 +26,7 @@ export const App = () => {
       }
     });
   }, []);
+
   return (
     <div className="wrap">
       {app.isFetching && <LinearProgress />}
