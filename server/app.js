@@ -1,10 +1,10 @@
-const express = require('express');
-const bodyParser = require('body-parser');
+const express = require("express");
+const bodyParser = require("body-parser");
 
 const app = express();
 
-const usersRoutes = require('./routes/phonewords');
-app.use(bodyParser.urlencoded({ extended: false }));
+const usersRoutes = require("./routes/phonewords");
+app.use(bodyParser.urlencoded({extended: false}));
 
 app.use(usersRoutes);
 

@@ -1,11 +1,11 @@
 .panel {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 100px);
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 100px);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
 }
 
 .panel__values {
-    margin-left: 10px;
+  margin-left: 10px;
 }

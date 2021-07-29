@@ -11,7 +11,25 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "nodemon": "^1.18.3"
+    "husky": "^4.3.7",
+    "lint-staged": "^10.5.3",
+    "nodemon": "^1.18.3",
+    "prettier": "2.2.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx,json,css,scss,less,md}": [
+      "./node_modules/.bin/prettier --write"
+    ]
+  },
+  "prettier": {
+    "printWidth": 90,
+    "bracketSpacing": false,
+    "trailingComma": "es5"
   },
   "dependencies": {
     "body-parser": "^1.18.3",
