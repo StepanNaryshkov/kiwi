@@ -29,12 +29,14 @@ export const App = () => {
 
   return (
     <div className="wrap">
-      {app.isFetching && <LinearProgress />}
+      <Typography component="h1">Phone Words predication</Typography>
+      {app.isFetching && <LinearProgress data-testid="progress" />}
       <div className="digits">
         {digits.map((digit, index) => (
           <Chip
             key={index}
             label={digit}
+            data-testid={`digit-${digit}`}
             onDelete={() => setDigit(digits.filter((_, ind) => index !== ind))}
           />
         ))}
@@ -44,7 +46,7 @@ export const App = () => {
         handleSubmit={handleSubmit}
         isFetching={app.isFetching}
       />
-      <Typography component="h1">
+      <Typography component="h2">
         The count of real words is {app.words.length}
       </Typography>
       {app.words.map((word) => (

@@ -38,10 +38,11 @@ const validDigits = [
 ];
 export const Panel = ({setDigit, handleSubmit, isFetching}) => {
   return (
-    <div className="panel">
+    <div className="panel" data-testid="panel">
       {validDigits.map((obj) => {
         return (
           <Button
+            data-testid={`number-${obj.key}`}
             key={obj.key}
             variant="contained"
             color="secondary"

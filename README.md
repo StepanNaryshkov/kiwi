@@ -34,7 +34,8 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 1. npm install
 2. npm start
 
-#Server
+------------------------------
+# Server
 ### Binary search is used for searing words
 ### DFS is used for creating phone combination
 ### It needs to allocate additional memory to find large words, so current solution can be tested with not more 12+ letters 
