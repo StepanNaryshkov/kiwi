@@ -1,4 +1,4 @@
-# Front
+# Front (with unit tests)
 ## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -35,7 +35,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 2. npm start
 
 ------------------------------
-# Server
+# Server (with - filtering to include only real words based on a suitable word list)
 ### Binary search is used for searing words
 ### DFS is used for creating phone combination
 ### It needs to allocate additional memory to find large words, so current solution can be tested with not more 12+ letters 
